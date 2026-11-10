@@ -10,7 +10,7 @@ Run the full chat version:
 python step3_campus_buddy.py
 ```
 
-This one has three tools (`get_requirements`, `get_schedule`, `get_canteen_price`) and remembers the conversation, so follow-up questions work. Try:
+This one has three ready-made tools (`get_requirements`, `get_schedule`, `get_canteen_price`, defined in `campus_buddy/tools.py`) and remembers the conversation, so follow-up questions work. Try:
 
 - `Ano ang schedule ng BSCS?`
 - `Magkano ang sinigang?`
@@ -23,17 +23,17 @@ Type `exit` to stop.
 Choose at least one:
 
 **Challenge A: Change the personality.**
-Edit `campus_prompt.py`. Try a different tone or a new rule. Run it again and see the difference.
+Edit `campus_buddy/prompt.py`. Try a different tone or a new rule. Run it again and see the difference.
 
 **Challenge B: Change the data.**
-Edit `campus_data.py`. Add a new canteen item, change a schedule, or add a course.
+Edit `campus_buddy/data.py`. Add a new canteen item, change a schedule, or add a course.
 
 **Challenge C: Add your own tool.** (the main challenge)
 1. Open `step3_campus_buddy.py` and find the section marked `YOUR TOOL HERE`.
 2. Remove the `#` signs to turn the example into real code.
 3. Rename the function and write a clear docstring that says what it does and when to use it.
 4. Make it return some text. It can be hardcoded.
-5. Add its name to the `tools=[...]` list near the bottom.
+5. Add its name inside the empty `[ ]` at the bottom, for example `tools=ALL_TOOLS + [my_new_tool]`.
 6. Run the script and ask a question that should trigger your tool.
 
 Tool ideas:

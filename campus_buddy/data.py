@@ -4,7 +4,7 @@ IMPORTANT: this is SAMPLE DATA for learning only. It is not official JPC
 information. Replace it with real details before anyone relies on it.
 
 The lookup functions are plain Python with no AWS code, so they are easy to
-read and easy to test. The agent tools in the step files just call them.
+read and easy to test. The agent tools in campus_buddy/tools.py just call them.
 """
 
 REQUIREMENTS = {

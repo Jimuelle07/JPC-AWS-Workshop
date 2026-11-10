@@ -13,9 +13,9 @@ get_requirements, then answer using the data it got back.
 from strands import Agent, tool
 from strands.models import BedrockModel
 
-from campus_data import lookup_requirements
-from campus_prompt import SYSTEM_PROMPT
-from config import MODEL_ID, REGION
+from campus_buddy.data import lookup_requirements
+from campus_buddy.prompt import SYSTEM_PROMPT
+from campus_buddy.config import MODEL_ID, REGION
 
 
 @tool

@@ -11,7 +11,7 @@ If you finished the pre-work, this is a quick confirmation. If not, a volunteer 
 3. Run:
 
 ```bash
-python check_setup.py
+python step0_check_setup.py
 ```
 
 4. You should see a greeting from the model and **Setup OK**.
@@ -43,7 +43,7 @@ python step1_hello_agent.py
 Now open `step1_hello_agent.py` and read it. It is short. There are three ideas:
 
 1. **A model:** `BedrockModel(...)` says which model on Amazon Bedrock to use.
-2. **Instructions:** the `system_prompt` is the Campus Buddy prompt from Level 1 (see `campus_prompt.py`).
+2. **Instructions:** the `system_prompt` is the Campus Buddy prompt from Level 1 (see `campus_buddy/prompt.py`).
 3. **An agent:** `Agent(model=..., system_prompt=...)` ties them together. Calling `agent("...")` sends a question and prints the answer.
 
 **Look closely at the answer.** It asked for BSIT enrollment requirements. Did the agent give a confident list? Remember: it has no data about our campus, so that list is a guess. Sounding sure is not the same as being right.
@@ -79,7 +79,7 @@ Three things to notice:
 - The **docstring** (the text in triple quotes) is how the agent learns what the tool does and when to use it. Clear docstring, better tool use.
 - The function **returns text**. The agent reads that text and uses it in its answer.
 
-The real data lives in `campus_data.py`. Open it and look at the `REQUIREMENTS` dictionary. This is sample data, so you can change it.
+The real data lives in `campus_buddy/data.py`. Open it and look at the `REQUIREMENTS` dictionary. This is sample data, so you can change it.
 
 ### Try it yourself
 

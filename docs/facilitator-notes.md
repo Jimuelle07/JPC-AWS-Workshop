@@ -8,7 +8,7 @@ Event: Thursday, November 12, 2026. Workshop block: 10:20 AM to 11:50 AM (90 min
 |---|---|---|---|
 | 10:20 - 10:30 | Level 0: Bedrock tour | Facilitator | Live demo on the projector, students follow along |
 | 10:30 - 10:45 | Level 1: Prompting | Facilitator | Play with the system prompt, compare two models |
-| 10:45 - 11:00 | Setup check | Volunteers help | Everyone runs `check_setup.py`. Hands up for Setup OK |
+| 10:45 - 11:00 | Setup check | Volunteers help | Everyone runs `step0_check_setup.py`. Hands up for Setup OK |
 | 11:00 - 11:25 | Level 2: Agent and tools | Facilitator | Step 1 guess, step 2 tool. Pause to explain the docstring |
 | 11:25 - 11:40 | Level 3: Make it yours | Everyone | Challenge A, B or C. Optional 5-minute MCP demo |
 | 11:40 - 11:50 | Wrap-up | Facilitator | Cleanup, costs, next steps |
@@ -18,13 +18,13 @@ Tip: if setup runs slow, the setup check absorbs the delay. Level 3 is the safes
 ## Before the event (day before)
 
 - [ ] Decide account access: event-provided accounts (AWS Workshop Studio) or students' own accounts. This changes everything about setup.
-- [ ] Confirm the **Region** and the exact **model ID** for the Amazon Nova model. Update the defaults in `config.py`, or announce the values to set as `AWS_REGION` and `MODEL_ID`.
-- [ ] Run Levels 1 and 2 yourself on a fresh account and laptop, including `check_setup.py`.
+- [ ] Confirm the **Region** and the exact **model ID** for the Amazon Nova model. Update the defaults in `campus_buddy/config.py`, or announce the values to set as `AWS_REGION` and `MODEL_ID`.
+- [ ] Run Levels 1 and 2 yourself on a fresh account and laptop, including `step0_check_setup.py`.
 - [ ] Confirm Bedrock quotas can handle about 60 people calling at once. If unsure, ask your AWS contact or Cloud Club for guidance.
 - [ ] Send the pre-work to students (message template below).
 - [ ] Test venue Wi-Fi capacity for about 70 devices. Bring a mobile hotspot for the technical volunteer.
 - [ ] Download the Python installer and a ZIP of this repo onto a few USB drives as an offline fallback.
-- [ ] Replace the sample data in `campus_data.py` with real JPC information, or keep it clearly labeled as sample.
+- [ ] Replace the sample data in `campus_buddy/data.py` with real JPC information, or keep it clearly labeled as sample.
 
 ## Pre-work message for students
 

@@ -97,7 +97,7 @@ These settings last only for that terminal window. If you open a new one, set th
 ## Step 6: Run the setup check
 
 ```bash
-python check_setup.py
+python step0_check_setup.py
 ```
 
 On Windows use `python` too once the virtual environment is active.
@@ -113,7 +113,7 @@ You should see a short greeting from the model and the words **Setup OK**. If yo
 | `pip install` fails | Check your internet, make sure the `(.venv)` prompt shows, then try again |
 | "No AWS credentials found" | Repeat Step 5 in the same terminal window you are using |
 | `AccessDeniedException` | Your key may be for a different Region or not allowed for that model. Ask a volunteer |
-| `ValidationException` or model not found | The model ID is wrong for your Region. Ask a volunteer, or set `MODEL_ID` (see `config.py`) |
+| `ValidationException` or model not found | The model ID is wrong for your Region. Ask a volunteer, or set `MODEL_ID` (see `campus_buddy/config.py`) |
 | `ThrottlingException` | Wait a few seconds and run it again. Many people are calling at once |
 
 Stuck? Do not worry. Bring your laptop early on workshop day and a volunteer will help at the registration table.

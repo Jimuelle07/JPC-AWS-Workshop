@@ -12,8 +12,8 @@ guessing. That is exactly the problem tools solve in the next step.
 from strands import Agent
 from strands.models import BedrockModel
 
-from campus_prompt import SYSTEM_PROMPT
-from config import MODEL_ID, REGION
+from campus_buddy.prompt import SYSTEM_PROMPT
+from campus_buddy.config import MODEL_ID, REGION
 
 model = BedrockModel(model_id=MODEL_ID, region_name=REGION, temperature=0.3)
 

@@ -1,7 +1,7 @@
 """The system prompt that gives Campus Buddy its personality and rules.
 
 You write and improve this in Level 1 (in the Bedrock playground) and then
-reuse it in the Python scripts. Try editing it and see how the answers change.
+reuse it in the step scripts. Try editing it and see how the answers change.
 """
 
 SYSTEM_PROMPT = """You are Campus Buddy, a friendly assistant for college students

@@ -30,20 +30,34 @@ Facilitators and volunteers: see [docs/facilitator-notes.md](docs/facilitator-no
 
 ## What is in this repo
 
-| File | What it is |
-|---|---|
-| `check_setup.py` | Checks Python, credentials and one real call to Bedrock |
-| `config.py` | Region and model ID, changeable with environment variables |
-| `campus_prompt.py` | The Campus Buddy system prompt |
-| `campus_data.py` | Sample requirements, schedules and canteen prices |
-| `step1_hello_agent.py` | Your first agent, no tools |
-| `step2_agent_with_tool.py` | The same agent with one custom tool |
-| `step3_campus_buddy.py` | A chat loop with three tools and a spot for yours |
-| `requirements.txt` | Python packages to install |
+```
+JPC-AWS-Workshop/
+├── step0_check_setup.py       Run first: checks Python, your key and one call to Bedrock
+├── step1_hello_agent.py       Your first agent, no tools (it guesses)
+├── step2_agent_with_tool.py   The same agent with one tool you write (it looks it up)
+├── step3_campus_buddy.py      A chat with three tools and a spot for your own
+│
+├── campus_buddy/              Shared code the steps use
+│   ├── config.py              AWS Region and model ID
+│   ├── prompt.py              Campus Buddy's personality and rules
+│   ├── data.py                Sample campus data and lookups
+│   └── tools.py               Ready-made agent tools for step 3
+│
+├── docs/                      Step-by-step guides
+│   ├── 00-pre-work.md
+│   ├── 01-tour-and-prompting.md
+│   ├── 02-first-agent.md
+│   ├── 03-make-it-yours.md
+│   └── facilitator-notes.md
+│
+└── requirements.txt           Python packages to install
+```
+
+You only run the `step` files, always from the project folder, for example `python step1_hello_agent.py`. You edit the files in `campus_buddy/` to change how Campus Buddy behaves.
 
 ## Important notes
 
-- The data in `campus_data.py` is **sample data**, not official JPC information.
+- The data in `campus_buddy/data.py` is **sample data**, not official JPC information.
 - Never put your API key in a file or share it. Set it only as an environment variable. It is deleted or expires after the workshop.
 - Amazon Bedrock charges for usage. A workshop like this costs very little per student, but delete your API key when you are done.
 

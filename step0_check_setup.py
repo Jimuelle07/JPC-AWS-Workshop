@@ -1,6 +1,6 @@
 """Run this FIRST. It checks your setup and makes one small call to Amazon Bedrock.
 
-    python check_setup.py
+    python step0_check_setup.py
 
 If everything is fine you will see a short greeting from the model and the
 words "Setup OK". If not, read the hint it prints.
@@ -9,7 +9,7 @@ words "Setup OK". If not, read the hint it prints.
 import os
 import sys
 
-from config import MODEL_ID, REGION
+from campus_buddy.config import MODEL_ID, REGION
 
 
 def fail(message):

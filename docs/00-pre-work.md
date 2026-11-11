@@ -2,7 +2,9 @@
 
 Time needed: about 20 minutes. Do this at home on the laptop you will bring.
 
-You will finish with Python installed, this project downloaded, and your packages installed. The last two steps (the API key and the setup check) are done at the workshop if you do not have your AWS access yet.
+**This is required.** The hands-on workshop is only one hour, so there is no time to install Python or packages during the session. If you skip this, you will only be able to follow along in the browser.
+
+You will finish with Python installed, this project downloaded, and your packages installed. **Steps 1 to 4 must be done before the event.** The last two steps (the API key and the setup check) are done at the workshop if you do not have your AWS access yet.
 
 ## Step 1: Check your AWS access
 
@@ -116,4 +118,4 @@ You should see a short greeting from the model and the words **Setup OK**. If yo
 | `ValidationException` or model not found | The model ID is wrong for your Region. Ask a volunteer, or set `MODEL_ID` (see `campus_buddy/config.py`) |
 | `ThrottlingException` | Wait a few seconds and run it again. Many people are calling at once |
 
-Stuck? Do not worry. Bring your laptop early on workshop day and a volunteer will help at the registration table.
+Stuck? Do not worry. Message Jimuelle Patron before the event, or come early on workshop day (registration opens at 8:30 AM) and a volunteer will help at the registration table. Setup help is only available before the program starts.

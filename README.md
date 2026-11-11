@@ -3,7 +3,7 @@
 **JPC AWS Seminar-Workshop | November 12, 2026**
 John Paul College, College of Engineering, Architecture, Technology and Sciences (CEATS)
 
-In about 90 minutes you will build **Campus Buddy**, a Taglish-friendly AI assistant that answers student questions. You start in the browser with no code, then build the same idea as a small Python agent that can use tools. You will use **Amazon Bedrock** for the AI model and the **Strands Agents SDK** to build the agent.
+In one hour you will build **Campus Buddy**, a Taglish-friendly AI assistant that answers student questions. You start in the browser with no code, then build the same idea as a small Python agent that can use tools. You will use **Amazon Bedrock** for the AI model and the **Strands Agents SDK** to build the agent.
 
 You do not need to know AI or the cloud. If you can run a Python script, you can do this.
 
@@ -11,16 +11,18 @@ You do not need to know AI or the cloud. If you can run a Python script, you can
 
 | Level | Time | What you do | Code needed |
 |---|---|---|---|
-| 0. Tour | 10 min | Explore Amazon Bedrock and its playground | None |
-| 1. Prompting | 15 min | Give the model a personality with a system prompt | None |
-| Setup check | 15 min | Confirm your laptop can talk to Bedrock | Run one script |
-| 2. Agent with tools | 25 min | Build an agent that calls your own Python function | About 15 lines |
-| 3. Make it yours | 15 min | Customize the prompt, data and tools | Copy and edit |
-| Wrap-up | 10 min | Costs, cleanup, what to build next | None |
+| Kickoff | 5 min | What we are building and how the hour runs | None |
+| 0 and 1. Tour and prompting | 12 min | Open the Bedrock playground and give the model a personality with a system prompt | None |
+| Setup check | 10 min | Create your API key and confirm your laptop can talk to Bedrock | Run one script |
+| 2. Agent with tools | 15 min | Build an agent that calls your own Python function | About 15 lines |
+| 3. Make it yours | 13 min | Run the full chat and change its personality or data | Copy and edit |
+| Wrap-up | 5 min | Cleanup, what to build next | None |
+
+Each guide ends with **take-home extras** (comparing models, more prompt experiments, adding your own tool) that do not fit in the hour.
 
 ## Start here
 
-1. **Before the workshop:** follow [docs/00-pre-work.md](docs/00-pre-work.md). It takes about 20 minutes.
+1. **Before the workshop (required):** follow [docs/00-pre-work.md](docs/00-pre-work.md). It takes about 20 minutes. There is no time to install Python during the session.
 2. **At the workshop:** follow the guides in order.
    - [docs/01-tour-and-prompting.md](docs/01-tour-and-prompting.md) (Levels 0 and 1)
    - [docs/02-first-agent.md](docs/02-first-agent.md) (setup check and Level 2)
